@@ -45,6 +45,9 @@ MapTo('vue/components/header-component')(headerComponent)
 // mainComponent mapping
 MapTo('vue/components/main-component')(mainComponent)
 
+// mainComponent2 mapping
+MapTo('vue/components/main-component2')(mainComponent)
+
 // textComponent mapping
 MapTo('vue/components/text-component')(textComponent)
 

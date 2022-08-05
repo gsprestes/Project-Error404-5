@@ -17,9 +17,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 footer {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;

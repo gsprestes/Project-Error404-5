@@ -1,8 +1,14 @@
-footer {
+#containerFooter {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 1.125em;
     align-content: center;
     text-align: center;
     line-height: 1.25em;
-    color: #bdbdbd
+    color: #bdbdbd;
+
+    @media (max-width: 760px) {
+        font-size: 0.875em;
+        margin-bottom: 5%;
+    }
+
 }

@@ -1,5 +1,5 @@
 <template>
-  <button :style="{'font-family': typeFont}" :id="buttonStyle">{{ buttonMsg }}</button>
+  <button :style="{'font-family': typeFont}">{{ buttonMsg }}</button>
 </template>
 
 <script>
@@ -8,10 +8,7 @@ export default {
   props: {
     buttonMsg: {
       type: String,
-      default: 'BACK TO HOMEPAGE'
-    },
-    buttonStyle: {
-      type: String
+      default: 'Back to homepage'
     },
     typeFont: {
       type: String

@@ -4,9 +4,9 @@
         <imageComponent :srcImage="srcImage"/>
     </div>
     <div class="containerRight">
-        <titleComponent :typeFont="titleFont" :titleStyle="titleStyle" :titleMsg="titleMsg"/>
-        <textComponent :typeFont="textFont" :textStyle="textStyle" :textMsg="textMsg"/>
-        <buttonComponent :typeFont="buttonFont" :buttonStyle="buttonStyle" :buttonMsg="buttonMsg"/>
+        <titleComponent :typeFont="titleFont" :titleMsg="titleMsg"/>
+        <textComponent :typeFont="textFont" :textMsg="textMsg"/>
+        <buttonComponent :typeFont="buttonFont" :buttonMsg="buttonMsg"/>
     </div>
   </main>
 </template>
@@ -26,34 +26,29 @@ export default {
   },
   props: {
     srcImage: {
-      type: String
+      type: String,
+      default: '/content/dam/vue/espantalho.png'
     },
     titleMsg: {
-      type: String
+      type: String,
+      default: 'I have bad news for you'
     },
     titleFont: {
-      type: String
-    },
-    titleStyle: {
       type: String
     },
     textFont: {
       type: String
     },
-    textStyle: {
-      type: String
-    },
     textMsg: {
-      type: String
+      type: String,
+      default: 'The page you are looking for might be removed or is temporarily unavailable'
     },
     buttonFont: {
       type: String
     },
-    buttonStyle: {
-      type: String
-    },
     buttonMsg: {
-      type: String
+      type: String,
+      default: 'BACK TO HOME PAGE'
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <p :style="{'font-family': typeFont}" :id="textStyle">{{ textMsg }}</p>
+  <p :style="{'font-family': typeFont}">{{ textMsg }}</p>
 </template>
 
 <script>
@@ -7,10 +7,8 @@ export default {
   name: 'textComponent',
   props: {
     textMsg: {
-      type: String
-    },
-    textStyle: {
-      type: String
+      type: String,
+      default: 'The page you are looking for might be removed or is temporarily unavailable'
     },
     typeFont: {
       type: String

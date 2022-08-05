@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h2 :id="idHeader" :style="{'font-family': typeFont}">{{ headerMsg }}</h2>
+    <h2 :style="{'font-family': typeFont}">{{ headerMsg }}</h2>
   </header>
 </template>
 
@@ -13,9 +13,6 @@ export default {
       default: '404 NOT FOUND'
     },
     typeFont: {
-      type: String
-    },
-    idHeader: {
       type: String
     }
   }

@@ -7,7 +7,8 @@ export default {
   name: 'imageComponent',
   props: {
     srcImage: {
-      type: String
+      type: String,
+      default: '/content/dam/vue/espantalho.png'
     }
   }
 }

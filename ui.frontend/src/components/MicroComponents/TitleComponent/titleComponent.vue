@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="{'font-family': typeFont}" :id="titleStyle">{{ titleMsg }}</h1>
+  <h1 :style="{'font-family': typeFont}">{{ titleMsg }}</h1>
 </template>
 
 <script>
@@ -9,9 +9,6 @@ export default {
     titleMsg: {
       type: String,
       default: 'I have bad news for you'
-    },
-    titleStyle: {
-      type: String
     },
     typeFont: {
       type: String

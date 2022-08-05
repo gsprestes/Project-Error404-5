@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items
+            jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items
+                    jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Imagem"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <srcImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Escolha uma imagem"
+                                name="./srcImage"/>
+                        </items>
+                    </image>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Título"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <titleMsg
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Digite um título"
+                                name="./titleMsg"/>
+                            <titleFont
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Tipo/Nível do Título"
+                                name="./titleFont">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                    <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                    <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                </items>
+                            </titleFont>
+                        </items>
+                    </title>
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Texto"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <textMsg
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Digite um texto"
+                                name="./textMsg"/>
+                            <textFont
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Selecione uma fonte"
+                                name="./textFont">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                    <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                    <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                </items>
+                            </textFont>
+                        </items>
+                    </text>
+                    <button
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Botão"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <buttonMsg
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Digite um texto para o botão"
+                                name="./buttonMsg"/>
+                                <buttonFont
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Tipo/Nível do Título"
+                                name="./buttonFont">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                    <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                    <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                </items>
+                            </buttonFont>
+                        </items>
+                    </button>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
