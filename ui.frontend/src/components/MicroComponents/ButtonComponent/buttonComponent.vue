@@ -4,19 +4,19 @@
 
 <script>
 export default {
-    name: "buttonComponent",
-    props: {
-        buttonMsg: {
-            type: String,
-            default: "BACK TO HOMEPAGE"
-        },
-        buttonStyle: {
-            type: String
-        },
-        typeFont: {
-            type: String
-        }
+  name: 'buttonComponent',
+  props: {
+    buttonMsg: {
+      type: String,
+      default: 'BACK TO HOMEPAGE'
+    },
+    buttonStyle: {
+      type: String
+    },
+    typeFont: {
+      type: String
     }
+  }
 }
 </script>
 

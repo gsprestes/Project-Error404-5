@@ -15,8 +15,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="mensagem do texto"
-                        name="./textMsg"/>
-                         <textFontStyle cq-msm-lockable="./typeFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o texto:" jcr:primaryType="nt:unstructured" name="./typeFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
+                        name="./titleMsg"/>
+                         <titleFontStyle cq-msm-lockable="./typeFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o título" jcr:primaryType="nt:unstructured" name="./typeFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
                                         <items jcr:primaryType="nt:unstructured">
                                             <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
                                             <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>

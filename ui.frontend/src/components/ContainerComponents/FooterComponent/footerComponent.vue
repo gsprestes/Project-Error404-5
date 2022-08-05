@@ -1,15 +1,14 @@
 <template>
-  <p :style="{'font-family': typeFont}" :id="textStyle">{{ textMsg }}</p>
+  <footer id="containerFooter">
+    <span :style="{'font-family': typeFont}"> created by {{textSpan}} - devChallenges.io</span>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'textComponent',
+  name: 'footerComponent',
   props: {
-    textMsg: {
-      type: String
-    },
-    textStyle: {
+    textSpan: {
       type: String
     },
     typeFont: {
@@ -21,5 +20,5 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
-@import './textComponent.scss';
+@import './footerComponent.scss';
 </style>

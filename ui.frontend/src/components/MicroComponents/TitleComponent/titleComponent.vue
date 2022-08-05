@@ -4,19 +4,19 @@
 
 <script>
 export default {
-    name: "titleComponent",
-    props: {
-        titleMsg: {
-            type: String,
-            default: "I have bad news for you"
-        },
-        titleStyle: {
-            type: String
-        },
-        typeFont: {
-            type: String
-        }
+  name: 'titleComponent',
+  props: {
+    titleMsg: {
+      type: String,
+      default: 'I have bad news for you'
+    },
+    titleStyle: {
+      type: String
+    },
+    typeFont: {
+      type: String
     }
+  }
 }
 </script>
 

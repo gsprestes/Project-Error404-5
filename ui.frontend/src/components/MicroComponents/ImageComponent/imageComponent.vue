@@ -1,12 +1,12 @@
 <template>
-  <img :src="src" />
+  <img :src="srcImage" />
 </template>
 
 <script>
 export default {
-  name: 'Image',
+  name: 'imageComponent',
   props: {
-    src: {
+    srcImage: {
       type: String
     }
   }

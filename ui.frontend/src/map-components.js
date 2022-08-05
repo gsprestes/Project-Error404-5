@@ -8,6 +8,12 @@ import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import Main from './components/Main/Main'
 import headerComponent from './components/ContainerComponents/HeaderComponent/headerComponent.vue'
+import mainComponent from './components/ContainerComponents/MainComponent/mainComponent.vue'
+import footerComponent from './components/ContainerComponents/FooterComponent/footerComponent.vue'
+import textComponent from './components/MicroComponents/TextComponent/textComponent.vue'
+import titleComponent from './components/MicroComponents/TitleComponent/titleComponent.vue'
+import buttonComponent from './components/MicroComponents/ButtonComponent/buttonComponent.vue'
+import imageComponent from './components/MicroComponents/ImageComponent/imageComponent.vue'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -30,8 +36,26 @@ const EditConfig = {
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
+// footerComponent mapping
+MapTo('vue/components/footer-component')(footerComponent)
+
 // headerComponent mapping
 MapTo('vue/components/header-component')(headerComponent)
+
+// mainComponent mapping
+MapTo('vue/components/main-component')(mainComponent)
+
+// textComponent mapping
+MapTo('vue/components/text-component')(textComponent)
+
+// titleComponent mapping
+MapTo('vue/components/title-component')(titleComponent)
+
+// buttonComponent mapping
+MapTo('vue/components/button-component')(buttonComponent)
+
+// imageComponent mapping
+MapTo('vue/components/image-component')(imageComponent)
 
 // Select Component Mapping
 MapTo('vue/components/select')(Select, EditConfig)

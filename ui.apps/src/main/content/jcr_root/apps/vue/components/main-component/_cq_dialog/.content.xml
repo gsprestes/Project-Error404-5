@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="Main Properties" sling:resourceType="cq/gui/components/authoring/dialog" mode="edit" helpPath="style-guide.html#compare-rows-services">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+        <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/tabs" type="nav"/>
+            <items jcr:primaryType="nt:unstructured">
+                    <tabOne>
+                        <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" />
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                        <imageUrl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldLabel="Digite o endereço da imagem"
+                            name="./srcImage"/>
+                            </items>
+                            </column>
+                        </items>
+                    </tabOne>
+                    <tabTwo>
+                    <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" />
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Digite um título"
+                            name="./titleMsg"/>
+                            <titleFontStyle cq-msm-lockable="./titleFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o título:" jcr:primaryType="nt:unstructured" name="./titleFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                        </items>
+                            </items>
+                            </column>
+                        </items>
+                    </tabTwo>
+                    <tabThree>
+                    <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" />
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                        <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Digite um texto"
+                            name="./textMsg"/>
+                             <textFontStyle cq-msm-lockable="./textFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o texto:" jcr:primaryType="nt:unstructured" name="./textFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                        </items>
+                            </items>
+                            </column>
+                        </items>
+                    </tabThree>
+                    <tabFour>
+                    <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false" />
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                        <buttonLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Texto do botão"
+                            name="./buttonMsg"/>
+                             <buttonFontStyle cq-msm-lockable="./buttonFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o botão:" jcr:primaryType="nt:unstructured" name="./buttonFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                        </items>
+                            </items>
+                            </column>
+                        </items>  
+                    </tabFour> 
+                </items>
+         
+    </content>
+</jcr:root>
