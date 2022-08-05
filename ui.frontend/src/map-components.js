@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import Main from './components/Main/Main'
+import headerComponent from './components/ContainerComponents/HeaderComponent/headerComponent.vue'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -28,6 +29,9 @@ const EditConfig = {
 **********************************************************************/
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
+
+// headerComponent mapping
+MapTo('vue/components/header-component')(headerComponent)
 
 // Select Component Mapping
 MapTo('vue/components/select')(Select, EditConfig)
